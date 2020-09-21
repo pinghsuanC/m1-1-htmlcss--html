@@ -1,1 +1,68 @@
 <!-- ...crickets... -->
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Registration Form for Taxi Service</title>
+</header>
+<body>
+        
+    <h1>Registration form</h1>
+
+    <!--Basic info-->
+    <form autocomplete="on">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password</label>
+        <input type="text" id="password" required>
+
+        <label for="Email">Email</label>
+        <input type="text" id="email" required>
+    </form>
+
+    <!--taxi-->
+    <h2>Which taxi do you require?</h2>
+    <form autocomplete="on">
+        <input type="radio" id="car" name="taxi" required>
+        <label for="car">Car</label>
+
+        <input type="radio" id="van" name="taxi">
+        <label for="van">Van</label>
+
+        <input type="radio" id="tuk" name="taxi">
+        <label for="tuk">Tuk tuk</label>
+    </form>
+
+    <!--extra-->
+    <h2>Choose your extras</h2>
+    <form autocomplete="on">
+        <input type="checkbox" id=babySeat>
+        <label for="babySeat">Baby seat</label>
+
+        <input type="checkbox" id="wheelchair">
+        <label for="wheelchair">Wheelchair access</label>
+
+        <input type="checkbox" id="privacyWindow">
+        <label for="privacyWindow">Privacy Window</label>
+    </form>
+
+    <!--pickup-->
+    <h2>Where would you like us to pick you up?</h2>
+    <form  autocomplete="on">
+        <label for="pickup">Pickup Location:</label>
+        <select id="pickup">
+        <option selected="selected">Select One</option>
+        <option value="loc_a">loc_a</option>
+        <option value="loc_b">loc_b</option>
+        <option value="loc_c">loc_c</option>
+        </select>
+    </form>
+
+    <!--additional-->
+    <h2>Additional Instructions</h2>
+        <label for="special">Special</label>
+        <textarea name="" id="spacial" cols="25" rows="2">Provide special instructions here</textarea>
+        <button>Submit</button>
+    </html>
+
+</body>
